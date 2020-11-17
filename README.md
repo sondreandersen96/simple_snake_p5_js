@@ -10,4 +10,4 @@ This simple Javascript/p5.js game is a re-creation of the popular snake game. Th
 ## How to run the game
 The entire game consists of only two files, the first is a very simple HTML file, that basically just loads the other file which is a Javascript file where the game is written. The program can be run in several ways, but the easiest is probably to use the node.js program called live-server. This program can be installed using the **npm** (node package manager). When installed simply navigate to the folder in which the files in this repository are stored, using the terminal, and then type the command **live-server** (at least this works on MacOS).
 
-Test...
+
