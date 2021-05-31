@@ -1,13 +1,36 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   	<script src="sketch.js"></script>
-    
 
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  	<main>
-  	</main>
+  	
+    <div class="contentContainer"> 
+
+
+
+      <div class="gameContainer">
+        <div class="headerDiv">
+          <h1>Snake</h1>
+        </div>
+        <div id="gamediv"></div>
+      </div>
+
+      <div id="controller" class="scoreContainer">
+        <button class="restartBtn" type="button" onclick="document.location.reload()">
+          Restart game
+        </button>
+      </div>
+
+    </div>
+    <footer>
+      <div class="footerText">Created by Sondre Andersen</div>
+    </footer>
   </body>
 
 </html>

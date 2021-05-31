@@ -1,0 +1,80 @@
+:root {
+    --colorBtn1: #D1E8E2;
+    --colorBtn2: #144f50;
+    --colorMain: #116466;
+    --colorController: #116466;
+    --colorBackground: #323936;
+    --colorShaddow: 0px 0px 20px 1px rgba(9, 9, 9, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: var(--colorBackground);
+}
+
+.contentContainer {
+    max-width: 800px;
+    margin: auto;
+}
+
+.headerDiv {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+
+}
+
+.gameContainer {
+    background-color: var(--colorMain);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: var(--colorShaddow);
+}
+
+.restartBtn {
+    position: relative;
+    cursor: pointer;
+    border: 2px solid var(--colorBtn1);
+    border-radius: 1em;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--colorBtn1);
+    background-color: var(--colorBtn2);
+}
+
+
+
+.scoreContainer {
+    background-color: var(--colorController);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--colorShaddow);
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    background-color: var(--colorBtn1);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 50px;
+}
+.footerText {
+    margin: 14px;
+}

@@ -3,13 +3,13 @@ let gameSettings = {
 	'screen_x': 600,
 	'screen_y': 600,
 	'frame_rate': 10,
-	'background_color': 100,
+	'background_color': "rgba(204, 231, 224, 0.9)",
 	'scale': 20, // is the number of pixels each object can take, and move per frame
 	'is_alive': true,
 	'snake_color': 255,
-	'snake_head_color_red': 255,
-	'snake_head_color_green': 10,
-	'snake_head_color_blue': 10,
+	'snake_head_color_red': 237,
+	'snake_head_color_green': 59,
+	'snake_head_color_blue': 32,
 	'super_food_color': [200, 10, 100],
 	'score_color': [1, 1, 1],
 	'score_text_size': 17,
@@ -33,7 +33,9 @@ let superfood;
 
 // Setup function
 function setup() {
-	createCanvas(gameSettings['screen_x'], gameSettings['screen_y']);
+	let canvas = createCanvas(gameSettings['screen_x'], gameSettings['screen_y']);
+	canvas.parent("gamediv");
+
 	frameRate(gameSettings['frame_rate']);
 
 	scoreboard = new ScoreBoard();
@@ -45,6 +47,9 @@ function setup() {
 
 // Main loop
 function draw() {
+	// Since the background is an RGBA color, and can thus be somewhat transparent, i need to fill the screen before
+	// ... setting the actual background color.
+	background(255);
 	background(gameSettings['background_color']);
 
 
@@ -269,7 +274,7 @@ class ScoreBoard {
 
 		fill(10);
 		textSize(32);
-		text('Score: ' + this.score , 250, 350);
+		text('Score: ' + this.score , 220, 344);
 
 		textSize(25);
 		text('Current High Score: ' + this.getHighScore(), 170, 385);
