@@ -2,7 +2,7 @@
 *This is a simple snake game created using the p5.js javascript library.*
 ![Snake Game](snake_gameplay.png)
 
-
+[Try it out here!](https://sondreandersen96.github.io/simple_snake_p5_js/index.html)
 
 
 This simple Javascript/p5.js game is a re-creation of the popular snake game. The game features a snake that can eat pieces of food to gain points and grow in size(length). There are two pieces of food, one normal piece of food (green) and a special *super food* that appears in the game at random times and disapears after a short while. This super food item gives more points if eaten before it goes away. The game is controlled using the arrows on your keyboard.
