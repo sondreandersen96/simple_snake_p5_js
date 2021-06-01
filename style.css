@@ -14,6 +14,9 @@
 
 body {
     background-color: var(--colorBackground);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .contentContainer {
@@ -70,10 +73,9 @@ footer {
     margin: 10px;
     background-color: var(--colorBtn1);
     width: 100%;
-    position: absolute;
-    bottom: 0;
     margin: 0;
     height: 50px;
+    margin-top: auto;
 }
 .footerText {
     margin: 14px;

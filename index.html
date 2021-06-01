@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-  	
+    <!-- Prevent scroll when using arrow-keys to play game -->
+    <script>
+      window.addEventListener("keydown", function(e) {
+        if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+          e.preventDefault();
+        }
+      }, false);
+    </script>
     <div class="contentContainer"> 
-
-
-
       <div class="gameContainer">
         <div class="headerDiv">
           <h1>Snake</h1>
