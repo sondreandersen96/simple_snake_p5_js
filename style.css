@@ -1,6 +1,7 @@
 :root {
     --colorBtn1: #D1E8E2;
     --colorBtn2: #144f50;
+    --colorBtnHover: #0a4041;
     --colorMain: #116466;
     --colorController: #116466;
     --colorBackground: #323936;
@@ -51,11 +52,16 @@ body {
     font-size: 20px;
     color: var(--colorBtn1);
     background-color: var(--colorBtn2);
+    transition: transform 0.3s ease;
+}
+.restartBtn:hover {
+    background-color: var(--colorBtnHover);
+    transform: translate(0px, 3px);
 }
 
 
 
-.scoreContainer {
+.controllerContainer {
     background-color: var(--colorController);
     padding: 40px;
     text-align: center;
